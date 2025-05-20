@@ -1,6 +1,10 @@
-def main():
-    print("Hello from python-web!")
+from flask import Flask
+
+app = Flask(__name__)
 
 
-if __name__ == "__main__":
-    main()
+@app.route("/hello")
+def hello():
+    return "<h1> Hello from python-web! </h1>"
+
+app.run()
