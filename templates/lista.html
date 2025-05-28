@@ -13,13 +13,17 @@
       <table class="table table-striped table-responsive table-bordered">
          <thead class="thead-default">
             <tr>
-               <th>None</th>
+               <th>nome</th>
+               <th>idade</th>
+               <th>sexo</th>
             </tr>
         </thead>
         <tbody>
            {%for item in lista_itens%}
            <tr>
-               <td>{{ item }}</td>
+               <td>{{ item.nome }}</td>
+               <td>{{ item.idade }}</td>
+               <td>{{ item.sexo }}</td>
            </tr>
            {% endfor %}
         </tbody>

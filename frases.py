@@ -6,5 +6,12 @@ class Estoico(Filosofo):
          "A nossa vida é aquilo que os nossos pensamentos fizerem dela."
         ]
     @classmethod
-    def frases(cls) -> list[str]:
+    def get_frases(cls) -> list[str]:
         return cls.mensagens
+
+class Pessoa():
+    def __init__(self, nome:str, idade:int, sexo):
+        self.nome = nome
+        self.idade =idade
+        self.sexo = sexo
+        pass
